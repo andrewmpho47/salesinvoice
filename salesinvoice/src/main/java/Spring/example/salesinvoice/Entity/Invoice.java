@@ -20,10 +20,8 @@ public class Invoice {
     private Long id;
     @Column(name = "client")
     private String client;
-
-    @Value("${my.double.value}")
     @Column(name = "vatRate")
-    private Double vatRate = 0.0;
+    private Double vatRate;
     @Column(name = "invoiceDate")
     private LocalDate invoiceDate;
     @OneToMany(cascade = CascadeType.ALL)
