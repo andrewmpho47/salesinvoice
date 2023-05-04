@@ -18,7 +18,7 @@ public class Invoice {
     @Column(name = "client")
     private String client;
     @Column(name = "vatRate")
-    private Double vatRate;
+    private Double vatRate = 14.00;
     @Column(name = "invoiceDate")
     private LocalDate invoiceDate;
     @OneToMany(cascade = CascadeType.ALL)

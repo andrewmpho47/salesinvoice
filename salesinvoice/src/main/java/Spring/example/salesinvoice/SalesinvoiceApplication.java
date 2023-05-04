@@ -10,15 +10,16 @@ public class SalesinvoiceApplication {
 
 	public static void main(String[] args)
 	{
-		//access the context
-		ConfigurableApplicationContext configurableApplicationContext =
-		SpringApplication.run(SalesinvoiceApplication.class, args);
+				//access the context
+		           ConfigurableApplicationContext configurableApplicationContext =
+			            SpringApplication.run(SalesinvoiceApplication.class, args);
 
-		//object to get bean from context and storing
-		InvoiceRepository invoiceRepository = configurableApplicationContext.getBean(InvoiceRepository.class);
+		              //object to get bean from context and storing
+						InvoiceRepository invoiceRepository = configurableApplicationContext.getBean(InvoiceRepository.class);
 
-		Invoice myInvoice = new Invoice();
-		invoiceRepository.save(myInvoice);
+				              Invoice myInvoice = new Invoice();
+							  invoiceRepository.save(myInvoice);
+
 	}
 
 }
