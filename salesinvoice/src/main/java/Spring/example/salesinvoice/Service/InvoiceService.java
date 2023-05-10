@@ -7,11 +7,15 @@ import java.util.List;
 
 @Service
 public class InvoiceService {
+
+    private final InvoiceRepository invoiceRepository;
+
     @Autowired
-    private InvoiceRepository invoiceRepository;
+    public InvoiceService(InvoiceRepository invoiceRepository){
+        this.invoiceRepository = invoiceRepository;
+    }
 
     public Invoice addInvoice(Invoice invoice) {
-
         return invoiceRepository.save(invoice);
     }
 
