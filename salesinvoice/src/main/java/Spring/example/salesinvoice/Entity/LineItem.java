@@ -7,19 +7,16 @@ import java.math.BigDecimal;
 @Entity
 @Table(name = "tbl_lineItem")
 public class LineItem {
-
      @Id
      @GeneratedValue(strategy = GenerationType.IDENTITY)
      @Column(name = "lt_id")
      private Long id;
      @Column(name = "quantity")
      private Long quantity;
-
      @Column(name = "description")
      private String description;
      @Column(name = "unitPrice")
      private BigDecimal unitPrice;
-
      @ManyToOne
      @JoinColumn(name = "inv_id")
      @GeneratedValue(strategy = GenerationType.IDENTITY)
