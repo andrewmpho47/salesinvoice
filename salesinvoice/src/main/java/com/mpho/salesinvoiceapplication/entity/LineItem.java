@@ -1,4 +1,4 @@
-package Spring.example.salesinvoice.Entity;
+package com.mpho.salesinvoiceapplication.entity;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import javax.persistence.*;

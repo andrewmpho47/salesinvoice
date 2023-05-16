@@ -1,6 +1,6 @@
-package Spring.example.salesinvoice.Service;
-import Spring.example.salesinvoice.Entity.Invoice;
-import Spring.example.salesinvoice.Repository.InvoiceRepository;
+package com.mpho.salesinvoiceapplication.Service;
+import com.mpho.salesinvoiceapplication.entity.Invoice;
+import com.mpho.salesinvoiceapplication.repository.InvoiceRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import java.util.List;

@@ -1,4 +1,4 @@
-package Spring.example.salesinvoice.Entity;
+package com.mpho.salesinvoiceapplication.entity;
 
 import org.springframework.stereotype.Component;
 import javax.persistence.*;
@@ -10,7 +10,6 @@ import java.util.List;
 @Table(name = "tbl_invoice")
 @Component
 public class Invoice {
-
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "inv_id")
@@ -38,8 +37,8 @@ public class Invoice {
         return client;
     }
 
-    public void setClient(String inClient){
-        this.client = inClient;
+    public void setClient(String Client){
+        this.client = Client;
     }
 
     public Double getVatRate() {

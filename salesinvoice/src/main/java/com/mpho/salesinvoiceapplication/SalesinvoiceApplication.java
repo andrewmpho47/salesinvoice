@@ -1,7 +1,7 @@
-package Spring.example.salesinvoice;
+package com.mpho.salesinvoiceapplication;
 
-import Spring.example.salesinvoice.Entity.Invoice;
-import Spring.example.salesinvoice.Repository.InvoiceRepository;
+import com.mpho.salesinvoiceapplication.entity.Invoice;
+import com.mpho.salesinvoiceapplication.repository.InvoiceRepository;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ConfigurableApplicationContext;
@@ -17,8 +17,8 @@ public class SalesinvoiceApplication {
 		              //object to get bean from context and storing
 						InvoiceRepository invoiceRepository = configurableApplicationContext.getBean(InvoiceRepository.class);
 
-				              Invoice myInvoice = new Invoice();
-							  invoiceRepository.save(myInvoice);
+						Invoice myInvoice = new Invoice();
+						invoiceRepository.save(myInvoice);
 
 	}
 

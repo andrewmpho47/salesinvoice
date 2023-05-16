@@ -1,15 +1,16 @@
-package Spring.example.salesinvoice;
+package com.mpho.salesinvoiceapplication;
 
-import Spring.example.salesinvoice.Entity.Invoice;
-import Spring.example.salesinvoice.Entity.LineItem;
-import Spring.example.salesinvoice.Repository.InvoiceRepository;
-import Spring.example.salesinvoice.Service.InvoiceService;
+import com.mpho.salesinvoiceapplication.entity.LineItem;
+import com.mpho.salesinvoiceapplication.entity.Invoice;
+import com.mpho.salesinvoiceapplication.repository.InvoiceRepository;
+import com.mpho.salesinvoiceapplication.Service.InvoiceService;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.boot.test.mock.mockito.MockBean;
 import org.springframework.test.context.junit4.SpringRunner;
+
 import java.math.BigDecimal;
 import java.time.LocalDate;
 import java.util.*;

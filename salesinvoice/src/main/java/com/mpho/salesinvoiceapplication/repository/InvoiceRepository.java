@@ -1,5 +1,5 @@
-package Spring.example.salesinvoice.Repository;
-import Spring.example.salesinvoice.Entity.Invoice;
+package com.mpho.salesinvoiceapplication.repository;
+import com.mpho.salesinvoiceapplication.entity.Invoice;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 @Repository
